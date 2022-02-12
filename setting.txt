@@ -1,0 +1,17 @@
+install vs code
+install git @ https://git-scm.com/
+@ vs code
+ 1) Terminal tab -> New Terminal -> 우측 하단에 git bash 추가
+ 2) $ git config --global user.email "[Git Hub email 계정]"
+ 3) $ git config --global user.name "peppsi"
+ 4) $ ssh-keygen -t rsa -C "[Git Hub email 계정]"
+ 5) $ cat ~/.ssh/id_rsa.pub <-- 출력내용을 복사하여 Git Hub에 입력 
+    Git Hub -> Settings -> SSH and GPG keys -> "New SSH key" 버튼 -> Title 에 적당한 title 입력 -> Key에 ssh key 붙여넣기 -> "Add SSH key" 버튼
+ 6) $ git init
+ 7) 사용 예제
+    $ git clone git@github.com:peppsiman/welcome.git .  <-- Git Hub에서 가져오기
+    $ git status <-- 최근 수정 내역 확인
+    $ git add file1.txt (또는 전체 파일은 git add -A)
+    $ git commit -m "first commit"
+    $ git push <-- Git Hub에 업로드
+   
